@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroTech Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7f2;
+    color:#333;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 8%;
+    background:linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.btn{
+    background:#4caf50;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#2e7d32;
+    margin-bottom:50px;
+}
+
+.comedouro{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.comedouro img{
+    width:100%;
+    border-radius:15px;
+}
+
+.info h3{
+    color:#2e7d32;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.info p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h4{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.contato{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+}
+
+.contato h2{
+    margin-bottom:20px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.comedouro{
+    grid-template-columns:1fr;
+}
+
+.beneficios{
+    grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AgroTech</div>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Comedouro</a>
+        <a href="#">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Soluções Sustentáveis para o Campo</h1>
+        <p>
+            Tecnologia, produtividade e bem-estar animal em um único lugar.
+        </p>
+        <a href="#comedouro" class="btn">Conheça o Produto</a>
+    </div>
+</section>
+
+<section class="section" id="comedouro">
+    <h2 class="section-title">Comedouro Automático</h2>
+
+    <div class="comedouro">
+        <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4"
+             alt="Comedouro">
+
+        <div class="info">
+            <h3>Eficiência e Economia</h3>
+
+            <p>
+                Nosso sistema de alimentação automática reduz desperdícios,
+                melhora a distribuição da ração e aumenta a produtividade.
+            </p>
+
+            <p>
+                Desenvolvido para proporcionar melhor desempenho e conforto
+                aos animais.
+            </p>
+
+            <a href="#" class="btn">Solicitar Orçamento</a>
+        </div>
+    </div>
+
+    <div class="beneficios">
+        <div class="card">
+            <h4>Menos Desperdício</h4>
+            <p>Economia de ração e melhor aproveitamento.</p>
+        </div>
+
+        <div class="card">
+            <h4>Alta Durabilidade</h4>
+            <p>Materiais resistentes para uso contínuo.</p>
+        </div>
+
+        <div class="card">
+            <h4>Fácil Limpeza</h4>
+            <p>Manutenção simples e rápida.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section contato">
+    <h2>Fale Conosco</h2>
+    <p>Solicite uma proposta personalizada para sua propriedade.</p>
+</section>
+
+<footer>
+    © 2026 AgroTech Sustentável
+</footer>
+
+</body>
+</html>
